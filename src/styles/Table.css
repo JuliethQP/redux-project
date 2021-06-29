@@ -1,0 +1,81 @@
+.tabla{
+    width: 100%;
+    text-align: left;
+    border-collapse:collapse;
+  }
+  .tabla thead th{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0.7rem .5rem;
+    margin: .5rem 0;
+    border-bottom:1px solid rgba(0,0,0,0.12);
+    color: rgba(0,0,0,0.6);
+  }
+  .tabla tbody td{
+    padding: 1rem .5rem;
+    font-size: 1.2rem;
+  }
+  .tabla tbody tr:nth-child(2n){
+    background-color: rgba(242, 242, 242, 0.602)
+  }
+  .tabla tbody tr:hover{
+    background-color: rgba(200, 200, 200, 0.808) ;
+    cursor: pointer;
+  }
+
+  .lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid black;
+    border-color: black transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .center{
+    text-align: center;
+  }
+
+  .eye-solid2.icon {
+    color: #000;
+    position: absolute;
+    margin-left: 3px;
+    margin-top: 3px;
+    width: 12px;
+    height: 12px;
+    border-radius: 70% 15%;
+    border: solid 1px currentColor;
+    background-color: currentColor;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  
+  .eye-solid2.icon:before {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    color: white;
+    background-color: currentColor;
+  }
+  
+  
